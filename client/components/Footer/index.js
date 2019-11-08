@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Social from '../../sub-components/unique/Social';
-import {Blurb} from '../../sub-components/unique/Blurb';
+import { Blurb } from '../../sub-components/unique/Blurb';
 import Hours from '../../sub-components/unique/Hours';
 import { sendMessage } from '../../store';
+import Reviews from '../../sub-components/unique/Reviews'
+
 
 class Footer extends Component {
   state = { name: '', email: '', message: '', feedback: '' };
@@ -39,6 +41,7 @@ class Footer extends Component {
         id="footer"
         className="flex column align-center justify-center wrap "
       >
+        <Reviews></Reviews>
         <form
           onSubmit={this.handleSubmit}
           className="flex column align-center justify-center w-100 background-mimosa"

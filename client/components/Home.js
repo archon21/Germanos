@@ -17,6 +17,7 @@ import {
   BarBlurb,
   CateringBlurb
 } from '../sub-components/unique/Blurb';
+import Reviews from '../sub-components/unique/Reviews';
 
 class Home extends Component {
   state = {
@@ -40,7 +41,7 @@ class Home extends Component {
 
   render() {
     const { aboutBlock, aboutPicture, state, props } = this;
-    const { events} = props;
+    const { events } = props;
     const { scrolled } = state;
 
     return (
@@ -128,7 +129,6 @@ class Home extends Component {
           backgroundUrl="https://firebasestorage.googleapis.com/v0/b/germanos-76121.appspot.com/o/backgrounds%2Fwhole_bar.jpg?alt=media&token=91acd87f-eb18-4075-bbc9-2bea70dd99eb"
           row
         >
-          <h1>Main Event</h1>
           <Carousel
             contain
             maxHeight="maxh-100vh"

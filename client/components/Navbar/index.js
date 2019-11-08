@@ -4,6 +4,7 @@ import NavHButton from './NavHButton';
 import { alertInteraction } from '../../store';
 import { connect } from 'react-redux';
 import Contact from '../Contact';
+import { Panel } from '../../sub-components/containers';
 
 class Navbar extends Component {
   state = {
@@ -37,14 +38,20 @@ class Navbar extends Component {
     return (
       <nav
         id="nav"
-        className="flex row wrap black align-center justify-space-evenly py-5px"
+        className="flex column black align-center justify-center py-5px"
       >
-        <Link to="/" className="nav__logo flex row align-center">
-          <div className="flex column ">
+        <Panel>
+          <div className="flex column nav__logo">
             <span className="body-2 color-white">493 Westchester Rd.</span>
             <span className="body-2 color-white">Colchester, CT</span>
+          </div>
 
+          <div className="nav__logo flex column align-start mx-20px">
+            <Link to="/" className="nav__logo-text py-10px">
+              Germano's Bar & Grill
+            </Link>
             <div className="flex row wrap">
+              <span className="headline-5 margin-0 color-white">{phone}</span>
               <a href="" className="nav__button" target="_blank">
                 <i className="fas fa-map-pin nav__button__icon " />
               </a>
@@ -53,46 +60,40 @@ class Navbar extends Component {
               </a>
             </div>
           </div>
+        </Panel>
 
-          <div className="flex column align-start mx-20px">
-            <span className="nav__logo-text py-10px">
-              Germano's Bar & Grill
-            </span>
-
-            <span className="headline-5 margin-0 color-white">{phone}</span>
-          </div>
-        </Link>
-
-        <Link
-          className={`headline-6 p-5px nav__link ${selectedLink === 'home' ||
-            (selectedLink === '' && 'selected')}`}
-          to={{ pathname: '/home' }}
-          onClick={() => this.selectLink('home')}
-        >
-          HOME
-        </Link>
-        <Link
-          className={`headline-6 p-5px nav__link ${selectedLink === 'menu'}`}
-          to={{ pathname: '/menu' }}
-          onClick={() => this.selectLink('menu')}
-        >
-          MENU
-        </Link>
-        <Link
-          className={`headline-6  p-5px nav__link ${selectedLink === 'info' &&
-            'selected'}`}
-          to={{ pathname: '/info' }}
-          onClick={() => this.selectLink('info')}
-        >
-          ABOUT
-        </Link>
-        <a
-          className={`headline-6  p-5px nav__link ${selectedLink ===
-            'contact' && 'selected'}`}
-          onClick={() => this.selectLink('contact')}
-        >
-          CONTACT
-        </a>
+        <div className="flex row wrap align-center justify-center">
+          <Link
+            className={`headline-4 p-5px nav__link ${selectedLink === 'home' ||
+              (selectedLink === '' && 'selected')}`}
+            to={{ pathname: '/home' }}
+            onClick={() => this.selectLink('home')}
+          >
+            HOME
+          </Link>
+          <Link
+            className={`headline-4 p-5px nav__link ${selectedLink === 'menu'}`}
+            to={{ pathname: '/menu' }}
+            onClick={() => this.selectLink('menu')}
+          >
+            MENU
+          </Link>
+          <Link
+            className={`headline-4  p-5px nav__link ${selectedLink === 'info' &&
+              'selected'}`}
+            to={{ pathname: '/info' }}
+            onClick={() => this.selectLink('info')}
+          >
+            ABOUT
+          </Link>
+          <a
+            className={`headline-4  p-5px nav__link ${selectedLink ===
+              'contact' && 'selected'}`}
+            onClick={() => this.selectLink('contact')}
+          >
+            CONTACT
+          </a>
+        </div>
       </nav>
     );
   }

@@ -20,7 +20,7 @@ const Panel = props => {
        ${column ? 'column' : 'row'}
        ${pad ? 'w-90' : 'w-100'}
        ${space ? 'justify-space-evenly' : 'justify-center'}
-       ${minHeight ? minHeight : 'minh-300px'}`}
+       ${minHeight ? minHeight : ''}`}
     >
       {props.children}
     </div>

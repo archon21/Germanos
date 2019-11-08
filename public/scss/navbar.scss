@@ -137,29 +137,24 @@
 }
 
 .nav__button {
-  background: $color-secondary;
+  background: transparent;
   width: 40px;
   height: 40px;
   margin: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
-  0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  // box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+  // 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .nav__button__icon {
-  color: $color-primary;
+  color: $color-tirciary;
   font-size: 35px;
   padding: 5px;
 }
 
 @media only screen and (max-width: 757px) {
-  .nav__logo {
-    display: none;
-  }
-
   .nav__logo-text {
     display: none;
   }
