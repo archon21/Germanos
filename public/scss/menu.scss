@@ -1,0 +1,37 @@
+.menu {
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+  }
+
+  .menu-content {
+    display: none;
+    position: absolute;
+    background-color: $color-primary;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+  }
+
+  .menu-item {
+    background: $color-primary;
+    color: $color-tirciary;
+    cursor: pointer;
+    min-height: 40px;
+    text-align: center;
+    border-bottom: 2px solid $color-tirciary;
+  }
+  .menu-item:hover {
+    background: $color-secondary;
+    color: $color-tirciary;
+  }
+
+  .menu:hover .menu-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu:hover button {
+    background-color: $color-secondary;
+    color: $color-tirciary;
+  }
