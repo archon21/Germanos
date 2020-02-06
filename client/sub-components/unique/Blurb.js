@@ -9,20 +9,36 @@ const Blurb = props => {
       } flex column align-center py-15px`}
     >
       <div className="flex column align-center px-15px w-100">
-        <span className="body-1 color-tirciary w-100">
-          Germano's Bar & Grill, one of the top Italian restaurants in
-          Colchester, has been delighting patrons from around the world for 20
-          years. Germano's Bar & Grill is a family restaurant serving
-          mouth-watering fast food dishes like pizza and pasta that you and your
-          family will enjoy. We also Italian Restauranthave signature dishes
-          that you can see in our restaurant menu. Aside from the great tasting
-          dishes that we serve, Germano's Bar & Grill is also known for its bar
-          and grill services. You can enjoy various bar drinks while playing
-          billiards with your friends and loved ones. Indeed, Germano's Bar &
-          Grill is your one stop destination where you can relax and while
-          eating your favorite Italian dishes. Come experience our fine cuisine
-          in a warm and casual atmosphere. At Germano's Bar & Grill, we have a
-          passion for flavor.
+        <span className="body-2 color-tirciary w-100">
+          The story began over 20 years....
+        </span>
+        <br></br>
+        <span className="body-2 color-tirciary w-100">
+          Johnny had the opportunity to learn about New york style pizza and
+          italian food from living New Haven for a few years, with some help
+          from a chef from Italy. Johny then learned about running a restaurant
+          from working as a Head Chef in Old Saybrook, during that time, he got
+          acquainted with a man from Colchester who wanted him to run his
+          restaurant and he fell in love with the beautiful scenery, people and
+          nature of the town, and decided to move there himself.
+        </span>
+        <br></br>
+        <span className="body-2 color-tirciary w-100">
+          After being confident in his own ideas for a business, he decided to
+          take a shot at it, setting up shop in Pawcatuck, then to Norwich and
+          finally setting on Colchester After Johnny contacted his good friend
+          Luis that he knew for more than 16 years, Johnny talked to Luis about
+          becoming a business partner for Germanos, knowing of Luis goals of
+          creating a successful business and more.
+        </span>
+        <br></br>
+        <span className="body-2 color-tirciary w-100">
+          And this how Germanos of Colchester got its start, and the rest is
+          history, after almost 11 years serving Colchester and our local
+          community, he is blessed for him and his business to continue being
+          part of this community. He is thankful to everyone that has helped
+          this business thrive, please visit for New York style pizza, Burgers,
+          Wings, Pastas and more…
         </span>
         <br />
         <span className="body-1 text-center color-tirciary">{address[0]}</span>
@@ -34,19 +50,11 @@ const Blurb = props => {
 
 const BillardBlurb = props => {
   return (
-    <div  className='py-20px'>
+    <div className="py-20px">
       <span className="body-1">
-        Aside from the great tasting array of Italian fast food dishes,
-        Germano's Bar & Grill also has billiards tables that you may enjoy while
-        munching on our classic Italian pizza. At Germano's Bar & Grill, your
-        dining experience will have an exciting twist because you can play
-        billiards with your friends while you’re inside our restaurant. We have
-        several pool tables that are available for our customers. You can also
-        check out our wine bar. We’re serving classic Italian wines that you
-        will surely enjoy. We serve Italian Pinot Noir, Merlot, Cabernet
-        Sauvignon, Chardonnay and Champagne & Sparkling Wines Come visit
-        Germano's Bar & Grill in Colchester, CT for billiards, food, drinks, and
-        fun!
+        We have 7 pool tables open Sunday through Thursday, as well as host
+        multiple APA Teams in 9 Ball and 8 Ball formats, as well as an In-House
+        League.
       </span>
     </div>
   );
@@ -54,7 +62,7 @@ const BillardBlurb = props => {
 
 const BarBlurb = props => {
   return (
-    <div  className='py-20px'>
+    <div className="py-20px">
       <span className="body-1">
         Aside from being an authentic Italian restaurant, we are also known as a
         great bar & grill restaurant in Colchester, CT. Cocktails and beers are
@@ -72,17 +80,11 @@ const BarBlurb = props => {
 
 const CateringBlurb = props => {
   return (
-    <div className='py-20px'>
-      <span className='body-1'>
-        Germano's Bar & Grill is serving Italian fast food dishes that you and
-        your whole family will enjoy, whether for lunch, dinner or any time of
-        the day! We create dishes that you’ll surely love like classic Italian
-        pizza topped with different kinds of cheeses and herbs. Of course, pasta
-        dishes are also available here. We have various sauces depending on your
-        taste. You can check out our menu for other delicious food choices and
-        finds. We also offer catering service in Colchester, CT. Contact
-        Germano's Bar & Grill today to learn more about our catering services
-        and fast food selections in Colchester, CT.
+    <div className="py-20px">
+      <span className="body-1">
+        We have 7 pool tables open Sunday through Thursday, as well as host
+        multiple APA Teams in 9 Ball and 8 Ball formats, as well as an In-House
+        League.
       </span>
     </div>
   );

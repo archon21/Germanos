@@ -83,7 +83,6 @@ button:focus {
 .menu__item__head {
   display: grid;
   grid-template-columns: 80% 20%;
-
 }
 
 .menu__item__head:first-child {
@@ -392,6 +391,14 @@ button:focus {
 
 .cursive {
   font-family: 'Bangers', cursive;
+}
+
+.home__img {
+  max-width: 450px;
+  min-width: 325px;
+  width: 100%;
+  object-fit: cover;
+  margin: 10px auto;
 }
 
 .gallery__image {

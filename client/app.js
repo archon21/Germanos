@@ -13,7 +13,7 @@ class App extends Component {
     mounted: false
   };
   async componentDidMount() {
-    // await this.props.willReadDB('updates');
+    await this.props.willReadDB('events');
     // await this.props.willReadDB('specials');
     // await this.props.willReadDB('images');
     // await this.props.willReadDB('specialsMenu');

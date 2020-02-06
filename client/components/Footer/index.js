@@ -5,8 +5,7 @@ import Social from '../../sub-components/unique/Social';
 import { Blurb } from '../../sub-components/unique/Blurb';
 import Hours from '../../sub-components/unique/Hours';
 import { sendMessage } from '../../store';
-import Reviews from '../../sub-components/unique/Reviews'
-
+import Reviews from '../../sub-components/unique/Reviews';
 
 class Footer extends Component {
   state = { name: '', email: '', message: '', feedback: '' };
@@ -83,11 +82,11 @@ class Footer extends Component {
                 href="https://goo.gl/maps/oBPVBj7rsStng6PW6"
               />
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.96376616092!2d-72.41659738425795!3d41.5456063941341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6413d6be6cb43%3A0x7ddc6879cdfbb59e!2sMaria&#39;s%20Pizza!5e1!3m2!1sen!2sus!4v1569513574593!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.0632658027735!2d-72.41359498432226!3d41.54622739409548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e64125491859e3%3A0xd35fd3ff19228e33!2sGermano&#39;s%20Bar%20%26%20Grill!5e0!3m2!1sen!2sus!4v1575521149621!5m2!1sen!2sus"
                 frameBorder="0"
                 allowFullScreen=""
                 className="footer__blurb__map__iframe"
-              />
+              ></iframe>
             </div>
 
             <Social footer />
@@ -136,7 +135,4 @@ const mapStateToProps = state => ({
   address: state.init.address
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Footer);
+export default connect(mapStateToProps, mapDispatchToProps)(Footer);

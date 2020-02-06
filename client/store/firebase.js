@@ -14,7 +14,6 @@ const defaultState = {
 };
 
 const readDB = (field, data) => ({ type: READ_DB, data, field });
-
 export const willReadDB = field => async dispatch => {
   try {
     const collection = db.collection(field);

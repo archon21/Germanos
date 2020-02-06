@@ -41,23 +41,22 @@ class Navbar extends Component {
         className="flex column black align-center justify-center py-5px"
       >
         <Panel>
-          <div className="flex column nav__logo">
-            <span className="body-2 color-white">493 Westchester Rd.</span>
-            <span className="body-2 color-white">Colchester, CT</span>
-          </div>
-
-          <div className="nav__logo flex column align-start mx-20px">
-            <Link to="/" className="nav__logo-text py-10px">
+          <div className="nav__logo flex column align-center w-100">
+            <Link to="/" className="nav__logo-text text-center py-10px">
               Germano's Bar & Grill
             </Link>
-            <div className="flex row wrap">
-              <span className="headline-5 margin-0 color-white">{phone}</span>
+            <div className="flex row wrap align-center w-90 justify-center mx-10px">
               <a href="" className="nav__button" target="_blank">
                 <i className="fas fa-map-pin nav__button__icon " />
               </a>
               <a href="" className="nav__button" target="_blank">
                 <i className="fas fa-envelope nav__button__icon " />
               </a>
+              <span className="headline-5 mx-10px color-white">{phone}</span>
+              <div className="flex column nav__logo mx-10px">
+                <span className="body-2 color-white">493 Westchester Rd.</span>
+                <span className="body-2 color-white">Colchester, CT</span>
+              </div>
             </div>
           </div>
         </Panel>
@@ -86,13 +85,13 @@ class Navbar extends Component {
           >
             ABOUT
           </Link>
-          <a
+          {/* <a
             className={`headline-4  p-5px nav__link ${selectedLink ===
               'contact' && 'selected'}`}
             onClick={() => this.selectLink('contact')}
           >
             CONTACT
-          </a>
+          </a> */}
         </div>
       </nav>
     );
@@ -108,9 +107,4 @@ const mapDispatchToProps = dispatch => ({
     dispatch(alertInteraction(status, template))
 });
 
-export default withRouter(
-  connect(
-    mapStateToProps,
-    mapDispatchToProps
-  )(Navbar)
-);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Navbar));
