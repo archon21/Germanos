@@ -40,10 +40,11 @@ class Footer extends Component {
         id="footer"
         className="flex column align-center justify-center wrap "
       >
-        <Reviews></Reviews>
+        {/* <Reviews></Reviews> */}
         <form
           onSubmit={this.handleSubmit}
-          className="flex column align-center justify-center w-100 background-mimosa"
+          className="flex column align-center justify-center w-100 background-primary
+          "
         >
           <input
             name="name"

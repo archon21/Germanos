@@ -327,7 +327,7 @@ class Menu extends Component {
           <Divider
             border
             color='color-tirciary'
-            backgroundColor="background-secondary"
+            backgroundColor="background-primary"
             type="headline-4"
             text={item.name}
             key={item.name}
@@ -374,7 +374,7 @@ class Menu extends Component {
   render() {
     const { menus, formatedMenu, selectedMenus } = this.state;
     return (
-      <WindoW backgroundUrl="https://firebasestorage.googleapis.com/v0/b/germanos-76121.appspot.com/o/Tables.jpg?alt=media&token=389ab0ae-7643-480e-bb1e-fbd894515558">
+      <WindoW background='background-secondary'>
         {/* <Flex row>
           <button
             type="button"

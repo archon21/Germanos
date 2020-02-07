@@ -11,11 +11,7 @@ class Info extends Component {
     console.log('YOOOOOOOO');
     console.log(address);
     return (
-      <WindoW
-        backgroundUrl="https://firebasestorage.googleapis.com/v0/b/mariaspizza.appspot.com/o/marias-back.png?alt=media&token=e3c66a2a-3be8-44a7-a85a-b2b9f25bbe4c"
-        column
-        background="background-secondary"
-      >
+      <WindoW column background="background-secondary">
         <div className="flex row wrap align-center justify-center w-100 my-30px">
           <Block
             column
@@ -43,6 +39,7 @@ class Info extends Component {
             <Hours />
           </Block> */}
         </div>
+
         <div className="flex row wrap align-center justify-center w-100 my-30px">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.026637735555!2d-72.41396778428033!3d41.547020479249774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e64125491859e3%3A0xd35fd3ff19228e33!2sGermano&#39;s%20Ristorante%20%26%20Bar!5e0!3m2!1sen!2sus!4v1581012798877!5m2!1sen!2sus"

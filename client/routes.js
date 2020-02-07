@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Home, Info, Menu} from './components';
+import { Home, Info, Menu, Drinks} from './components';
 import { NotFound, Loader } from './sub-components';
 import Privacy from './components/Footer/Privacy';
 class Routes extends Component {
@@ -20,6 +20,7 @@ class Routes extends Component {
         <Route exact path="/home" component={Home} />
         <Route exact path="/info" component={Info} />
         <Route exact path="/menu" component={Menu} />
+        <Route exact path="/drinks" component={Drinks} />
         <Route exact path="/privacy" component={Privacy} />
         {/* <Route exact path="/specials" component={Specials} /> */}
         <Route component={NotFound} />

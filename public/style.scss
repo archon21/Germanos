@@ -20,6 +20,16 @@
 @import './scss/menu.scss';
 @import './scss/position.scss';
 @import './scss/reviews.scss';
+
+.drink__image {
+  width: 325px;
+  object-fit: contain;
+}
+
+.icon-image {
+  width: 50px;
+}
+
 html {
   scroll-behavior: smooth;
 }

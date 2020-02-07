@@ -4,18 +4,13 @@ const Social = props => {
   const { footer } = props;
   return (
     <div className="flex row align-center p-30px">
-      <a href="https://www.instagram.com/mariaspizza744/" target="_">
-        <i
-          className={`${
-            !footer ? 'color-primary' : 'color-secondary'
-          } icon fa fa-instagram`}
-        />
+      <a href="https://www.instagram.com/germanosct/" target="_">
+        <img src="/assets/icons/instagram.png" className="icon-image" />
       </a>
-      <a href="https://www.facebook.com/mariaspizzapalace" target="_">
-        <i
-          className={`${
-            !footer ? 'color-primary' : 'color-secondary'
-          } icon fa fa-facebook`}
+      <a href="https://www.facebook.com/germanosct/" target="_">
+        <img
+          src="/assets/icons/facebook.png"
+          className="icon-image"
           aria-hidden="true"
         />
       </a>

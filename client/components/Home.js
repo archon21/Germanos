@@ -52,8 +52,9 @@ class Home extends Component {
           color="color-primary"
         >
           <div className="flex row align-center wrap">
+
+            <h1 className="headline-3 cursive">Coming up at Germanos’s!</h1>
             <Social />
-            <h1 className="headline-3 cursive">This Week at Germanos’s!</h1>
           </div>
         </Divider>
         <WindoW
@@ -68,105 +69,68 @@ class Home extends Component {
             items={events}
           />
         </WindoW>
-        <Divider
+        {/* <Divider
           border
           backgroundColor="background-secondary"
           color="color-primary"
         >
           <h1 className="headline-3 cursive">Services</h1>
-        </Divider>
-        <WindoW
-          column
-          relative
-          background="background-primary"
-        >
+        </Divider> */}
+
+        <WindoW column background="background-secondary">
+          <Divider
+            border
+            backgroundColor="background-primary"
+            color="color-secondary"
+          >
+            <h1 className="headline-4 cursive">Billards</h1>
+          </Divider>
           <div className="flex row align-center w-100 wrap">
             <img
               className="home__img"
               src="https://firebasestorage.googleapis.com/v0/b/germanos-76121.appspot.com/o/backgrounds-jan%2FIMG_1384.JPG?alt=media&token=db8ef2ef-14ed-4fba-92e7-21e3ed8c2b39"
             ></img>
+            <Block column type="info-card" height="h-auto" width="maxw-600px">
+              <BillardBlurb />
+            </Block>
+          </div>
+        </WindoW>
+        <WindoW column background="background-secondary">
+          <Divider
+            border
+            backgroundColor="background-primary"
+            color="color-secondary"
+          >
+            <h1 className="headline-4 cursive">Grill</h1>
+          </Divider>
+          <div className="flex row align-center w-100 wrap">
             <img
               className="home__img"
-              src="https://firebasestorage.googleapis.com/v0/b/germanos-76121.appspot.com/o/backgrounds%2Fwhole_bar.jpg?alt=media&token=91acd87f-eb18-4075-bbc9-2bea70dd99eb"
+              src="https://firebasestorage.googleapis.com/v0/b/germanos-76121.appspot.com/o/backgrounds-jan%2FIMG_1384.JPG?alt=media&token=db8ef2ef-14ed-4fba-92e7-21e3ed8c2b39"
             ></img>
+            <Block column type="info-card" height="h-auto" width="maxw-600px">
+              <CateringBlurb />
+            </Block>
           </div>
-          <div className="flex column align-center justify-center background-secondary">
-            <BillardBlurb />
+        </WindoW>
+        <WindoW column background="background-secondary">
+          <Divider
+            border
+            backgroundColor="background-primary"
+            color="color-secondary"
+          >
+            <h1 className="headline-4 cursive">Bar & Grill</h1>
+          </Divider>
+          <div className="flex row align-center w-100 wrap">
+            <img
+              className="home__img"
+              src="https://firebasestorage.googleapis.com/v0/b/germanos-76121.appspot.com/o/backgrounds-jan%2FIMG_1384.JPG?alt=media&token=db8ef2ef-14ed-4fba-92e7-21e3ed8c2b39"
+            ></img>
+            <Block column type="info-card" height="h-auto" width="maxw-600px">
+              <BarBlurb />
+            </Block>
           </div>
         </WindoW>
-        <Divider
-          border
-          backgroundColor="background-primary"
-          color="color-secondary"
-        >
-          <h1 className="headline-4 cursive">Billards</h1>
-        </Divider>
-        <WindoW
-          column
-          relative
-          backgroundUrl="https://firebasestorage.googleapis.com/v0/b/germanos-76121.appspot.com/o/backgrounds%2Fbar.jpg?alt=media&token=332154cc-799d-41bc-a405-152b1035fe1a"
-        >
-          {/* <Carousel
-            contain
-            maxHeight="maxh-100vh"
-            height="h-800px"
-            width="w-70"
-            items={specials}
-
-
-          /> */}
-
-          <Block
-            column
-            type="info-card"
-            height="h-auto"
-            width="w-100"
-            absolute
-            position="bottom"
-          >
-            <BarBlurb />
-          </Block>
-        </WindoW>
-        <Divider
-          border
-          backgroundColor="background-primary"
-          color="color-secondary"
-        >
-          <h1 className="headline-4 cursive">Bar & Grill</h1>
-        </Divider>
-        <WindoW
-          column
-          relative
-          backgroundUrl="https://firebasestorage.googleapis.com/v0/b/germanos-76121.appspot.com/o/backgrounds%2Ftables.jpg?alt=media&token=721760d7-4a22-4729-9c4e-45632b41ee5e"
-        >
-          {/* <Carousel
-            contain
-            maxHeight="maxh-100vh"
-            height="h-800px"
-            width="w-70"
-            items={specials}
-
-
-          /> */}
-
-          <Block
-            column
-            type="info-card"
-            height="h-auto"
-            width="w-100"
-            absolute
-            position="bottom"
-          >
-            <CateringBlurb />
-          </Block>
-        </WindoW>
-        <Divider
-          border
-          backgroundColor="background-primary"
-          color="color-secondary"
-        >
-          <h1 className="headline-4 cursive">Food</h1>
-        </Divider>
       </div>
     );
   }
